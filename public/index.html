@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./bower_components/angular/angular.min.js"></script>
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+</head>
+
+<body ng-app>
+
+<div  class="container">
+   <br>
+   <a href="register.html"> Register </a>
+   <a href="admin/login"> Login </a>
+   <a href="admin/dashboard"> Dashboard </a>
+   
+   <form action="login" method="post">
+      <br>
+      <input type="text" ng-model="name"> your name is : {{name}} 
+      <br><br>
+      <h1 class="alert-danger"> Welcome Page </h1>
+      <div>
+        <label for=""> UserID</label>
+        <input type="text" name="userid" id="userid" class="form-control" placeholder="Enter Userid">
+      </div>
+      <div>
+        <label for=""> Password </label>
+        <input type="password" name="pwd" id="pwd" class="form-control" placeholder="Enter Password">
+      </div>
+      <br>
+        <button type="submit" class="btn btn-primary"> Login </button>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+#node modules ignored
+node_modules
+
+#bower files ignored
+public/bower_components
